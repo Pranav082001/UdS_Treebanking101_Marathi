@@ -81,5 +81,6 @@ There is [1](../treebanks/mr-comparison.html) Marathi UD treebank:
 * All the sentences utilized for annotations are scrapped from Indian prime minister's speech given during corona time <a href="https://www.pmindia.gov.in/mr/news_updates/पंतप्रधानांचे-देशाला-उद्/?comment=disable"> Speech link </a>
 * Prime Minister’s Office. (2020, May 12). पंतप्रधानांचे देशाला उद्देशून संबोधन. https://www.pmindia.gov.in/mr/news_updates/पंतप्रधानांचे-देशाला-उद्
 * The speech is available under a Creative Commons license. 
-* English translation and transliteration of the sentences in the treebank were performed using the Google Translate API.
+* English translation and transliteration of the sentences in the treebank were performed using Google Translate API.
+* Treebank has been validated till LVL-3 (errors) 
 ---
