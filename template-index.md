@@ -1,17 +1,16 @@
 ---
 layout: base
-title:  '<LanguageName> UD'
+title:  'Marathi UD'
 udver: '2'
 ---
-
+### Note: This documentation has been adapted from <a href="https://universaldependencies.org/mr/index.html"> Marathi UFAL Treebank </a>
 # UD for LANGUAGE <span class="flagspan"><img class="flag" src="../../flags/svg/AQ.svg" /></span>
 
 ## Tokenization and Word Segmentation
 
-*
+* In general, words are delimited by whitespace characters. Description of exceptions follows.
+* According to typographical rules, some punctuation marks (e.g., comma) are attached to a neighboring word, while others (e.g., the sentence-terminating danda) are not. We tokenize punctuation as separate tokens (words).
 
----
-**Instruction**: Describe the general rules for delimiting words (for example, based on whitespace and punctuation) and exceptions to these rules. Specify whether words with spaces and/or multiword tokens occur. Include links to further language-specific documentation if available.
 
 ---
 
@@ -19,41 +18,68 @@ udver: '2'
 
 ### Tags
 
-*
+* Marathi uses all 17 universal POS categories, including particles ([PART]()).
+* Marathi has the following auxiliary verbs ([AUX]()):
+  * असणे _asaṇe_ (“to be”) is used as copula and in periphrastic tenses. The forms of नाही are treated as negative forms of असणे (they share the lemma).
+  * नको _nako_ (“don't”) is used to create negative imperative (prohibitive).
+  * येणे _yeṇe_ (“to come”) for the passive (with a non-finite form of the main verb).
+  * जाणे _jāṇe_ (“to go”) for the passive (with a non-finite form of the main verb).
+  * Modal auxiliaries:
+    * शकणे _śakaṇe_ (“be able, can”)
+    * पाहिजे _pāhije_ (“needed, should, ought to”)
+ 
+* There are five main (de)verbal forms, distinguished by the UPOS tag and the value of the [VerbForm]() feature:
+  * Infinitive `Inf`, tagged [VERB]() or [AUX](). Two distinct forms are both annotated as infinitive and further distinguished by the language-specific feature `InfForm`:
+    * `Dict` -णॆ, -आत _-ṇe, -āta_ (the citation/dictionary form is _-ṇe_)
+    * `Incp` -ऊ _-ū_
+  * Finite verb `Fin`, tagged [VERB]() or [AUX]().
+  * Participle `Part`, tagged [VERB]() or [AUX]().
+
+
+
 
 ---
-**Instruction**: Specify any unused tags. Explain what words are tagged as PART. Describe how the AUX-VERB and DET-PRON distinctions are drawn, and specify whether there are (de)verbal forms tagged as ADJ, ADV or NOUN. Include links to language-specific tag definitions if any.
 
----
+### Nominal Features
 
-### Features
+* Nominal words ([NOUN](), [PROPN]() and [PRON]()) have an inherent [Gender]() feature with one of three values: `Masc`, `Fem` or `Neut`.
+  * The following parts of speech inflect for `Gender` and `Animacy` because they must agree with nouns: [ADJ](), [DET](),
+    [VERB](), [AUX]().
+* The two main values of the [Number]() feature are `Sing` and `Plur`. The following parts of speech inflect for number:
+  [NOUN](), [PROPN](), [PRON](), [ADJ](), [DET](), [VERB](), [AUX](), marginally [ADP]().
+* [Case]() has 10 possible values: `Nom`, `Acc`, `Ins`, `Dat`, `Abl`, `Loc`, `Voc`, `Com`, `Erg`, `Abs`.
+  The first seven values (nominative to vocative) correspond to cases traditionally distinguished and ordered this way in the grammar of Sanskrit and its descendant languages.
 
-*
+### Verbal Features
 
----
-**Instruction**: Describe inherent and inflectional features for major word classes (at least NOUN and VERB). Describe other noteworthy features. Include links to language-specific feature definitions if any.
+* Verbs in the indicative mood always have one of three values of [Tense](): `Past`, `Pres` or `Fut`.
+* [Aspect]() has four possible values: `Hab`, `Imp`, `Perf`, `Prosp`.
+* [Polarity]() has two values, `Pos` and `Neg`, and applies only to the auxiliaries ([AUX]()) असणे _asaṇe_ (“to be”) (both positive and negative forms)
+  and नको _nako_ (“don't”) (only negative forms).
 
----
+### Pronouns, Determiners, Quantifiers
 
-## Syntax
+* [NumType]() is used with numerals ([NUM]()) and adjectives ([ADJ]()).
+* [Person]() is a lexical feature of personal pronouns ([PRON]()) and has three values, `1`, `2` and `3`.
+  Note however, that the third person pronouns overlap with demonstratives.
+  * As a cross-reference to subject, person is also marked on finite verbs ([VERB](), [AUX]()).
 
-*
-
----
-**Instruction**: Give criteria for identifying core arguments (subjects and objects), and describe the range of copula constructions in nonverbal clauses. List all subtype relations used. Include links to language-specific relations definitions if any.
 
 ---
 
 ## Treebanks
 
-There are [N](../treebanks/LCODE-comparison.html) LANGUAGE UD treebanks:
+There is [1](../treebanks/mr-comparison.html) Marathi UD treebank:
 
-  * [LANGUAGE-A](../treebanks/LCODE_a/index.html)
-  * [LANGUAGE-B](../treebanks/LCODE_b/index.html)
+  * [Marathi-UFAL](../treebanks/mr_ufal/index.html)
 
 ---
-**Instruction**: Treebank-specific pages are generated automatically from the README file in the treebank repository and
-from the data in the latest release. Link to the respective `*-index.html` page in the `treebanks` folder, using the language code
-and the treebank code in the file name.
 
+## Additional Notes
+* This documentation has been adapted from <a href="https://universaldependencies.org/mr/index.html"> Marathi UFAL Treebank </a>
+* The dataset focuses on political speech.
+* All the sentences utilized for annotations are scrapped from Indian prime minister's speech given during corona time <a href="https://www.pmindia.gov.in/mr/news_updates/पंतप्रधानांचे-देशाला-उद्/?comment=disable"> Speech link </a>
+* Prime Minister’s Office. (2020, May 12). पंतप्रधानांचे देशाला उद्देशून संबोधन. https://www.pmindia.gov.in/mr/news_updates/पंतप्रधानांचे-देशाला-उद्
+* The speech is available under a Creative Commons license. 
+* English translation and transliteration of the sentences in the treebank were performed using the Google Translate API.
 ---
