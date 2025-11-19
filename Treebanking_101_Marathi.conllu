@@ -105,7 +105,7 @@
 # translation = It is as if the world has entered into a war to save lives
 1	अवघे	अवघे	DET	_	Case=Nom|Gender=Neut|Number=Sing	2	det	_	Translit=avaghe
 2	जग	जग	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	8	nsubj	_	Translit=jaga
-3	जणू	जणू	ADV	_	_	8	advmod	_	Translit=janu
+3	जणू	जणू	ADV	_	ExtPos=ADV	8	advmod	_	Translit=janu
 4	काही	काही	ADV	_	_	3	fixed	_	Translit=kahi
 5	आयुष्य	आयुष्य	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	6	obj	_	Translit=ayushya
 6	वाचवण्याच्या	वाचवणे	VERB	_	Case=Gen|Gender=Neut|Number=Sing|VerbForm=Vnoun	7	acl	_	Translit=vachavanyachya
