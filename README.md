@@ -7,7 +7,9 @@ The Marathi-Discourse treebank is a manually annotated corpus in Marathi (Devana
 UD Marathi-Discourse is a manually annotated treebank for Marathi, consisting of sentences from a political (speech) discourse. The data is sourced from the official Marathi translation of Prime Minister Narendra Modi’s address to the nation regarding the COVID-19 pandemic, delivered on May 12, 2020.
 
 The corpus contains 35 Discourse sentences. 
+
 Treebank metadata also includes translation and transliteration of all the sentences. The trasnlations were perfroemd using Google translate while the transliterations were generated using Indic-Transliteration library. 
+
 Annotations follows the Universal Dependencies v2 guidelines for tokenization, part-of-speech tags, and dependency relations.
 
 Data was collected from the official site of Prime minister of India. Link: https://www.pmindia.gov.in/mr/news_updates/पंतप्रधानांचे-देशाला-उद्
