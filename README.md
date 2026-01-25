@@ -8,7 +8,7 @@ UD Marathi-Discourse is a manually annotated treebank for Marathi, consisting of
 
 The corpus contains 35 Discourse sentences. 
 
-Treebank metadata also includes translation and transliteration of all the sentences. The trasnlations were perfroemd using Google translate while the transliterations were generated using Indic-Transliteration library. 
+Treebank metadata also includes translation and transliteration of all the sentences. The trasnlations were performed using Google translate while the transliterations were generated using Indic-Transliteration library. 
 
 Annotations follows the Universal Dependencies v2 guidelines for tokenization, part-of-speech tags, and dependency relations.
 
@@ -66,7 +66,7 @@ Data available since: UD v2.18
 License: CC BY-SA 4.0
 Includes text: yes
 Parallel: no
-Genre: agriculture, grammar, general, tourism
+Genre: Political discourse
 Lemmas: manual native
 UPOS: manual native
 XPOS: not available
